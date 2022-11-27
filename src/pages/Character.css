@@ -1,0 +1,13 @@
+.first{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+
+}
+.character{
+    
+    margin-top: 30px;
+}
+img{height: 200px;
+width: 350px;}

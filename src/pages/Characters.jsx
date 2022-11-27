@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
-import axios from 'axios'
 import { useDispatch, useSelector } from 'react-redux'
 import getCharacters  from '../redux/characters.functions' 
+import './Character.css'
 
 
 const Characters = () => {
@@ -14,11 +14,11 @@ const Characters = () => {
   }, [])
 
   return (
-    <div>
+    <div className='first'>
       
       {isLoading ? (
         <img
-          src="https://tbphelps.com/skin/frontend/ultimo/default/images/wating.gif"
+          src="https://media4.giphy.com/media/9DIIOQBzgjHeO3vz05/giphy.gif?cid=6c09b9526cd7ff547bf8e9e03d7091cef746bc7c6ad2fbb5&rid=giphy.gif&ct=s"
           alt="loading"
         />
       ) : !error ? (
@@ -26,10 +26,9 @@ const Characters = () => {
         characters.map((character) => {
           return (
             
-              <div className="ropa" key={character._id}>
-                <p>{character.name}</p>
+              <div className="character" key={character._id}>
                 <img src={character.img} alt={character.name} />
-             
+                <p>{character.name}</p>
               </div>
             
           );

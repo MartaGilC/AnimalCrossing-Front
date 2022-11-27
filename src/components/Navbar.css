@@ -1,0 +1,24 @@
+nav{
+    height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #c2d4dd;
+    justify-content: space-around;
+    text-decoration: none;
+    
+}
+.active:hover{
+    font-weight: bold;
+    font-size: large;
+    color: #b0aac0 ;
+
+}
+a{
+    text-decoration: none;
+    color: #f0efef;
+    font-size: larger;
+    font-weight: lighter
+}
+.active{
+    
+}

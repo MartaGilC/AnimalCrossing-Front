@@ -1,0 +1,12 @@
+
+.enlaces{
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+}
+
+.links{
+    
+    color: black ;
+}
